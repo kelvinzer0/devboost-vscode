@@ -1,0 +1,11 @@
+{
+  "python.pythonPath": "/[PLEASE_EDIT]/python3",
+  "python.formatting.provider": "black",
+  "editor.formatOnSave": true,
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
+  "search.exclude": {
+    "**/__pycache__": true,
+    "**/.venv": true
+  }
+}
