@@ -11,7 +11,8 @@
     "**/.vercel": true,
     "**/.output": true,
     "**/.cache": true,
-    "**/.git": true
+    "**/.git": true,
+    "**/.vscode": true
   },
   "files.exclude": {
     "**/node_modules": true,
@@ -25,7 +26,8 @@
     "**/.vercel": true,
     "**/.output": true,
     "**/.cache": true,
-    "**/.git": true
+    "**/.git": true,
+    "**/.vscode": true
   },
   "editor.formatOnSave": true,
   "javascript.format.enable": true,
