@@ -1,0 +1,33 @@
+{
+ "search.exclude": {
+    "**/node_modules": true,
+    "**/package-lock.json": true,
+    "**/yarn.lock": true,
+    "**/pnpm-lock.yaml": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.next": true,
+    "**/.turbo": true,
+    "**/.vercel": true,
+    "**/.output": true,
+    "**/.cache": true,
+    "**/.git": true
+  },
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/package-lock.json": true,
+    "**/yarn.lock": true,
+    "**/pnpm-lock.yaml": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.next": true,
+    "**/.turbo": true,
+    "**/.vercel": true,
+    "**/.output": true,
+    "**/.cache": true,
+    "**/.git": true
+  },
+  "editor.formatOnSave": true,
+  "javascript.format.enable": true,
+  "prettier.requireConfig": true
+}
