@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>devboost-vscode ⚡</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      background: #fefefe;
+      color: #222;
+    }
+    h1 {
+      font-size: 2rem;
+      color: #111;
+    }
+    pre {
+      background: #f0f0f0;
+      padding: 1rem;
+      border-radius: 6px;
+      overflow-x: auto;
+      position: relative;
+    }
+    button.copy-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 0.3rem 0.6rem;
+      font-size: 0.8rem;
+      cursor: pointer;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 4px;
+    }
+    .lang-block {
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>⚡ devboost-vscode</h1>
+  <p>
+    Quick configuration presets for Visual Studio Code based on programming language.<br />
+    Just pick a preset, download it using <code>wget</code>, and you're ready to code — without distractions like
+    <code>node_modules</code>, <code>dist</code>, or <code>__pycache__</code>.
+  </p>
+
+  <h2>🚀 Quick Setup</h2>
+  <p>Copy one of the commands below:</p>
+
+  <div class="lang-block">
+    <h3>Node.js</h3>
+    <pre><code id="node">mkdir -p .vscode && wget https://devboost.js.org/node -O .vscode/settings.json</code>
+      <button class="copy-btn" onclick="copyCommand('node')">Copy</button>
+    </pre>
+  </div>
+
+  <div class="lang-block">
+    <h3>Python</h3>
+    <pre><code id="python">mkdir -p .vscode && wget https://devboost.js.org/python -O .vscode/settings.json</code>
+      <button class="copy-btn" onclick="copyCommand('python')">Copy</button>
+    </pre>
+  </div>
+
+  <div class="lang-block">
+    <h3>Go</h3>
+    <pre><code id="go">mkdir -p .vscode && wget https://devboost.js.org/go -O .vscode/settings.json</code>
+      <button class="copy-btn" onclick="copyCommand('go')">Copy</button>
+    </pre>
+  </div>
+
+  <div class="lang-block">
+    <h3>Rust</h3>
+    <pre><code id="rust">mkdir -p .vscode && wget https://devboost.js.org/rust -O .vscode/settings.json</code>
+      <button class="copy-btn" onclick="copyCommand('rust')">Copy</button>
+    </pre>
+  </div>
+
+  <div class="lang-block">
+    <h3>PHP</h3>
+    <pre><code id="php">mkdir -p .vscode && wget https://devboost.js.org/php -O .vscode/settings.json</code>
+      <button class="copy-btn" onclick="copyCommand('php')">Copy</button>
+    </pre>
+  </div>
+
+  <div class="lang-block">
+    <h3>C</h3>
+    <pre><code id="c">mkdir -p .vscode && wget https://devboost.js.org/c -O .vscode/settings.json</code>
+      <button class="copy-btn" onclick="copyCommand('c')">Copy</button>
+    </pre>
+  </div>
+
+  <script>
+    function copyCommand(id) {
+      const code = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(code).then(() => {
+        alert("Copied to clipboard!");
+      });
+    }
+  </script>
+</body>
+</html>
