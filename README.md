@@ -9,5 +9,5 @@ Just pick a preset, download it using `wget`, and you're ready to code — witho
 ## 🚀 Quick Setup
 
 ```bash
-mkdir -p .vscode && wget https://raw.githubusercontent.com/kelvinzer0/devboost-vscode/main/<language> -O .vscode/settings.json
+mkdir -p .vscode && wget https://raw.githubusercontent.com/kelvinzer0/devboost-vscode/main/node -O .vscode/settings.json
 ```
